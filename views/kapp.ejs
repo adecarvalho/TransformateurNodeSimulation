@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <% include head.ejs %>
+</head>
+
+<body>
+    <% include header.ejs %>
+
+        <div class="container">
+
+            <h1 class="text-center"><%= titre %></h1>
+
+            <!--  -->
+            <% if (succes==false) { %>
+            <div class="alert alert-danger alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">
+                    <span>&times;</span>
+                </button>
+                <strong>Message</strong>
+
+                    <% if(error != undefined) { %>
+                        <ul>
+                            <% for(var i=0; i< error.length;i++){ %>
+                                <li> <%= error[i].msg %></li>
+                            <% }%>
+                        </ul>
+                    <% } %>
+            </div>
+            <% } %>
+            <!--  -->
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- les parametres -->
+                    <form action="/" method="post" class="mform">
+                        <!-- valeur de m -->
+                        <div class="form-group">
+                            <label for="kapp_m">Rapport de Transformation m:</label>
+                            <input type="number" id="kappp_m" name="kapp_m" value="<%= kapp_datas.m %>" step=0.01 min=0 max=10 class="form-control">
+                        </div>
+
+                        <!-- valeur de Rp -->
+                        <div class="form-group">
+                            <label for="kapp_rp">Résistance Rp:</label>
+                            <input type="number" id="kappp_rp" name="kapp_rp" value="<%= kapp_datas.rp %>" step=0.1 min=0 class="form-control">
+                        </div>
+
+                        <!-- valeur de Lp -->
+                        <div class="form-group">
+                            <label for="kapp_lp">Inducance Lp:</label>
+                            <input type="number" id="kappp_lp" name="kapp_lp" value="<%= kapp_datas.lp %>" step=0.01 min=0 class="form-control">
+                        </div>
+
+                        <!-- valeur de Rs -->
+                        <div class="form-group">
+                            <label for="kapp_rs">Résistance Rs:</label>
+                            <input type="number" id="kappp_rs" name="kapp_rs" value="<%= kapp_datas.rs %>" step=0.01 min=0 class="form-control">
+                        </div>
+
+                        <!-- valeur de Xs -->
+                        <div class="form-group">
+                            <label for="kapp_xs">Réactance Xs:</label>
+                            <input type="number" id="kappp_xs" name="kapp_xs" value="<%= kapp_datas.xs %>" step=0.01 min=0 class="form-control">
+                        </div>
+
+                        <!-- submit -->
+                        <input type="submit" class="btn btn-primary" value="Enregistrer">
+
+                    </form>
+                    <!-- fig -->
+                </div>
+                <!-- fig -->
+                <div class="col-md-6">
+
+                    <img src="/images/modele_de_kapp.png" id="image_kapp" class="img-fluid mx-auto" alt="fig kapp">
+                    <hr>
+                    <img src="/images/transformateur.jpg" id="image_transfo"class="img-fluid mx-auto" alt="">
+
+                </div>
+            </div>
+            <!--  -->
+            <% include footer.ejs %>
+        </div>
+        <% include les_scripts.ejs %>
+</body>
+
+</html>

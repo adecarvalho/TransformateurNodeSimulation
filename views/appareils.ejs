@@ -1,0 +1,111 @@
+<h1 class="text-center"><%= titre %></h1>
+<div class="row">
+    <!-- bloc Tension primaire -->
+    <div class="col-md-4 col-sm-12 py-2" id="tension_primaire">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>U1 eff (V)</h3>
+            </div>
+            <div class="card-body">
+                <div id="gauge_tension_primaire" class="gauge"></div>
+            </div>
+            <!-- slider -->
+            <div class="m_slider">
+                <div>
+                    <input type="text" id="range_u1" name="range_u1" value="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bloc Tension secondaire -->
+    <div class="col-md-4 col-sm-12 py-2" id="tension_secondaire">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>U2 eff (V)</h3>
+            </div>
+            <div class="card-body">
+                <div id="gauge_tension_secondaire" class="gauge"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reglages -->
+    <div class="col-md-4 col-sm-12 py-2" id="reglages">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>Charge</h3>
+            </div>
+            <div class="card-body">
+                <div class="m_slider">
+                    <div>
+                        <!-- phi -->
+                        <h6>Phase:</h6>
+                        <input type="text" id="range_phi" name="range_phi" value="">
+                    </div>
+                </div>
+                <div class="m_slider">
+                    <div>
+                        <!-- charge -->
+                        <h6>Module:</h6>
+                        <input type="text" id="range_charge" name="range_charge" value="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--  -->
+<div class="row">
+    <!-- bloc Courant primaire -->
+    <div class="col-md-3 col-sm-12 py-4" id="courant_primaire">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>I1 eff (A)</h3>
+            </div>
+            <div class="card-body">
+                <p id="gauge_courant_primaire" class="mlcd">0.0</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- bloc courant secondaire -->
+    <div class="col-md-3 col-sm-12 py-4" id="courant_secondaire">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>I2 eff (A)</h3>
+            </div>
+            <div class="card-body">
+                <p id="gauge_courant_secondaire" class="mlcd">0.0</p>
+            </div>
+        </div>
+    </div>
+
+<!--  -->
+
+    <!-- bloc puissance primaire -->
+    <div class="col-md-3 col-sm-12 py-4" id="puissance_primaire">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>P1 (W)</h3>
+            </div>
+            <div class="card-body">
+                <p id="gauge_puissance_primaire" class="mlcd">0</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- bloc puissance secondaire -->
+    <div class="col-md-3 col-sm-12 py-4" id="puissance_secondaire">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>P2 (W)</h3>
+            </div>
+            <div class="card-body">
+                <p id="gauge_puissance_secondaire" class="mlcd">0</p>
+            </div>
+        </div>
+    </div>
+</div>

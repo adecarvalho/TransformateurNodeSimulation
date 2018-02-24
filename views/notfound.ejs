@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <% include head.ejs %>
+</head>
+
+<body>
+    <% include header.ejs %>
+        <!--  -->
+        <div class="container">
+            <div class="alert alert-danger text-center">
+                <h1><%= titre  %></h1>
+                <a href="/" class="alert-link">Retour</a>
+            </div>
+
+            <!--  -->
+            <% include footer.ejs %>
+        </div>
+        <% include les_scripts.ejs %>
+</body>
+
+</html>
