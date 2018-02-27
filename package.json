@@ -1,7 +1,7 @@
 {
-  "name": "transformateur",
+  "name": "transformateur_node_simulation",
   "version": "1.0.0",
-  "description": "simulation transformateur avec hypothese de Kapp",
+  "description": "simulation d'un transformateur avec hypothese de Kapp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

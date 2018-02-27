@@ -1,42 +1,38 @@
-
 @charset "UTF-8";
-
 @font-face {
     font-family: 'digital-7mono';
     src: url('digital-7_mono-webfont.eot');
-    src: url('digital-7_mono-webfont.eot?#iefix') format('embedded-opentype'),
-    url('digital-7_mono-webfont.woff2') format('woff2'),
-    url('digital-7_mono-webfont.woff') format('woff'),
-    url('digital-7_mono-webfont.ttf') format('truetype'),
-    url('digital-7_mono-webfont.svg#digital-7mono') format('svg');
+    src: url('digital-7_mono-webfont.eot?#iefix') format('embedded-opentype'), url('digital-7_mono-webfont.woff2') format('woff2'), url('digital-7_mono-webfont.woff') format('woff'), url('digital-7_mono-webfont.ttf') format('truetype'), url('digital-7_mono-webfont.svg#digital-7mono') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-body html {
+body html{
     padding: 0;
     margin: 0;
 }
 
-h1{
-    text-shadow: 2px 2px 4px #555;
+h1 {
+    font-size:3em;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #555;
 }
 
-.container{
+.container {
     background-color: #fff;
 }
 
-.container-fluid{
+.container-fluid {
     background-color: #fff;
 }
 
-.mform{
+.mform {
     margin: auto;
 }
 
-.gauge{
-  margin:auto;
-  box-shadow: 0 14px 45px rgba(0,0,0,0.25), 0 10px 18px rgba(0, 0, 0, 0.22);
+.gauge {
+    margin: auto;
+    box-shadow: 0 14px 45px rgba(0, 0, 50, 0.5), 0 10px 20px rgba(0, 0, 0, 0.22);
 }
 
 #image_kapp {
@@ -45,24 +41,24 @@ h1{
     display: block;
 }
 
-#image_transfo{
+#image_transfo {
     max-width: 100%;
     height: auto;
     display: block;
-    box-shadow: 0 14px 45px rgba(0,0,0,0.5), 0 10px 18px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 45px rgba(0, 0, 50, 0.5), 0 10px 20px rgba(0, 0, 0, 0.22);
 }
 
 .mlcd {
-    font-family:'digital-7mono';
+    font-family: 'digital-7mono';
     font-size: 5em;
-    box-shadow: 0 14px 45px rgba(0,0,0,0.25), 0 10px 18px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 45px rgba(0, 0, 50, 0.5), 0 10px 20px rgba(0, 0, 0, 0.22);
 }
 
-.m_slider{
+.m_slider {
     padding: 10px;
 }
 
-.mtete{
-    color:#FFF;
+.mtete {
+    color: #FFF;
     text-shadow: 2px 2px 4px black;
 }

@@ -9,12 +9,6 @@
             <div class="card-body">
                 <div id="gauge_tension_primaire" class="gauge"></div>
             </div>
-            <!-- slider -->
-            <div class="m_slider">
-                <div>
-                    <input type="text" id="range_u1" name="range_u1" value="">
-                </div>
-            </div>
         </div>
     </div>
 
@@ -34,20 +28,29 @@
     <div class="col-md-4 col-sm-12 py-2" id="reglages">
         <div class="card text-center">
             <div class="card-header bg-primary mtete">
-                <h3>Charge</h3>
+                <h3>Réglages</h3>
             </div>
             <div class="card-body">
+                <!--  -->
+                <div class="m_slider">
+                    <div>
+                        <!-- U1eff -->
+                        <h6>Tension U1eff:</h6>
+                        <input type="text" id="range_u1" name="range_u1" value="">
+                    </div>
+                </div>
+                <!--  -->
                 <div class="m_slider">
                     <div>
                         <!-- phi -->
-                        <h6>Phase:</h6>
+                        <h6>Phase de la charge</h6>
                         <input type="text" id="range_phi" name="range_phi" value="">
                     </div>
                 </div>
                 <div class="m_slider">
                     <div>
                         <!-- charge -->
-                        <h6>Module:</h6>
+                        <h6>Module de la charge</h6>
                         <input type="text" id="range_charge" name="range_charge" value="">
 
                     </div>

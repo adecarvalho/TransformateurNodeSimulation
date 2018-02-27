@@ -204,11 +204,11 @@ $(document).ready(function() {
         //
         gaugeTensionSecondaire.SonicGauge('val',datas.u2eff.toFixed(1));
         //
-        gaugePuissanceSecondaire.text(datas.p2.toFixed(1));
+        gaugePuissanceSecondaire.text(datas.p2.toFixed(0));
         //
         gaugeCourantPrimaire.text(datas.i1eff.toFixed(2));
         //
-        gaugePuissancePrimaire.text(datas.p1.toFixed(1));
+        gaugePuissancePrimaire.text(datas.p1.toFixed(0));
     });
 });
 //fin
