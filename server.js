@@ -137,3 +137,9 @@ io.sockets.on('connection', (socket) => {
         calculs_mesures()
     })
 })
+
+//exit
+process.on('SIGINT',()=>{
+    io.sockets.emit('exit')
+    process.exit()
+})

@@ -210,5 +210,11 @@ $(document).ready(function() {
         //
         gaugePuissancePrimaire.text(datas.p1.toFixed(0));
     });
+
+    //******************************
+    //exit
+    socket.on('exit',function(){
+        socket.close()
+    })
 });
 //fin
